@@ -3,7 +3,7 @@ module.exports = {
   description:
     'このサイトは🔰初心者向けのフロントエンド向けの情報をまとめるサイトです。',
   themeConfig: {
-    base: 'taka1156/fe-beginner-doc',
+    base: '/fe-beginner-doc/',
     repo: 'taka1156/fe-beginner-doc',
     logo: '/site/logo.png',
     docsDir: 'docs',
