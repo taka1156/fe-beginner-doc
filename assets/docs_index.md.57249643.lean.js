@@ -1,0 +1,1 @@
+import{o as e,c as t,d as r}from"./app.e980e203.js";const a='{"title":"0. はじめに","description":"","frontmatter":{},"relativePath":"docs/index.md","lastUpdated":1619160636125}',p={},o=r('',3);p.render=function(r,a,p,h,i,l){return e(),t("div",null,[o])};export default p;export{a as __pageData};
