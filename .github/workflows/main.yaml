@@ -26,14 +26,15 @@ jobs:
         key: ${{ env.cache-version }}-${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ env.cache-version }}-${{ runner.os }}-node-
+
     - name: install
       if: steps.cache.outputs.cache-hit != 'true'
       run: yarn install
 
     - name: build
-      run: docs:build
+      run: yarn docs:build
 
-    - name: Deploy
+    - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
