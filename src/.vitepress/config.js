@@ -50,7 +50,7 @@ module.exports = {
       { text: '5. 発展: viteを使った環境構築', link: '/docs/5_ex_vite' },
       { text: '6. 発展: spaページで404が出る', link: '/docs/6_ex_spa' },
       { text: '7. 発展: linterを入れよう', link: '/docs/7_ex_linter' },
-      { text: '8. 編集者、管理者', link: '/docs/writers' },
+      { text: '8. 編集者、管理者一覧', link: '/docs/writers' },
     ],
   },
 };
