@@ -2,6 +2,9 @@ module.exports = {
   title: 'Welcome to Frontend World',
   description:
     'このサイトは🔰初心者向けのフロントエンド向けの情報をまとめるサイトです。',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/site/logo.png' }],
+  ],
   base: '/fe-beginner-doc/',
   themeConfig: {
     repo: 'taka1156/fe-beginner-doc',
