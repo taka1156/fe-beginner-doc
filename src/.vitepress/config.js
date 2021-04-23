@@ -17,7 +17,6 @@ module.exports = {
     docsBranch: 'master',
 
     nav: [
-      { text: 'github', link: 'https://github.com/taka1156/fe-beginner-doc' },
       {
         text: '公式リンク',
         items: [
