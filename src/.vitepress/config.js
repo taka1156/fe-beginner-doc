@@ -2,15 +2,15 @@ module.exports = {
   title: 'Welcome to Frontend World',
   description:
     'このサイトは🔰初心者向けのフロントエンド向けの情報をまとめるサイトです。',
+  base: '/fe-beginner-doc/',
   themeConfig: {
-    base: '/fe-beginner-doc/',
     repo: 'taka1156/fe-beginner-doc',
     logo: '/site/logo.png',
+    editLinks: true,
+    editLinkText: 'このページをgithubで編集',
+    lastUpdate: '最終更新',
     docsDir: 'docs',
     docsBranch: 'master',
-    editLinks: true,
-    editLinkText: 'Suggest changes to this page',
-    lastUpdate: '最終更新',
 
     nav: [
       { text: 'github', link: 'https://github.com/taka1156/fe-beginner-doc' },
