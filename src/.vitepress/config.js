@@ -35,7 +35,7 @@ module.exports = {
           {
             text: 'github pages',
             link:
-              'https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pagese',
+              'https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages',
           },
         ],
       },
