@@ -45,7 +45,7 @@
   .profile-box {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 85%;
     height: 150px;
     padding: 0;
     margin: 0 auto;
@@ -56,7 +56,7 @@
 
   .profile-box__img {
     display: block;
-    width: 30%;
+    width: 50%;
     height: 80%;
     padding: 0;
     margin: 10px;
@@ -76,5 +76,14 @@
     display: flex;
     height: 50%;
     width: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .profile-box {
+      width: 60%;
+    }
+    .profile-box__img {
+      width: 30%;
+    }
   }
 </style>
