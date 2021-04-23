@@ -3,6 +3,7 @@ module.exports = {
   description:
     'このサイトは🔰初心者向けのフロントエンド向けの情報をまとめるサイトです。',
   head: [
+    ['meta', { property: 'og:image', content: '/fe-beginner-doc/site/logo.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/fe-beginner-doc/site/logo.png' }],
   ],
   base: '/fe-beginner-doc/',
