@@ -6,7 +6,7 @@
 - **vueを選択**
   
   `vue-cli`を導入して、対話形式でvue-routerを導入してみましょう。<br>
-  順番: [2](./1_vue.md) --> [4](./4_githubpages.md) --> ex
+  順番: [1](./1_vue.md) --> [4](./4_githubpages.md) --> ex
 
 
 
