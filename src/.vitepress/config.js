@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Welcome to Frontend World',
   description:
-    'このサイトは🔰初心者向けのフロントエンド向けの情報をまとめるサイトです。',
+    'このサイトはフロントエンド🔰初心者向けのの情報をまとめるサイトです。',
   head: [
     ['meta', { property: 'og:image', content: '/fe-beginner-doc/site/logo.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/fe-beginner-doc/site/logo.png' }],
