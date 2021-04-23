@@ -13,7 +13,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'このページをgithubで編集',
     lastUpdate: '最終更新',
-    docsDir: 'docs',
+    docsDir: 'src',
     docsBranch: 'master',
 
     nav: [
