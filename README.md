@@ -1,4 +1,4 @@
-# Frontend Beginner Document
+# Frontend Engineer Beginner Document
 
 フロントエンド初心者向けのドキュメント
 
