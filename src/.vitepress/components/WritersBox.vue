@@ -3,7 +3,7 @@
     <p>{{ writer.writerName }}</p>
     <div class="profile-box">
       <img
-        :src="writer.imgIcon"
+        :src="imgPath(writer.imgIcon)"
         alt="プロフィール画像"
         class="profile-box__img"
       />
@@ -28,6 +28,15 @@
       return {
         writers: WRITERS,
       };
+    },
+    methods: {
+      imgPath(imgUrl) {
+        if (process.env.NODE_ENV !== 'production') {
+          return imgUrl;
+        } else {
+          return `/fe-beginner-doc${imgUrl}`;
+        }
+      },
     },
   };
 </script>
