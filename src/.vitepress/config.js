@@ -46,6 +46,10 @@ module.exports = {
             link: 'https://ja.reactjs.org/',
           },
           {
+            text: 'svelte',
+            link: 'https://sveltejp.dev/'
+          },
+          {
             text: 'Vite',
             link: 'https://vitejs.dev/',
           },
@@ -63,6 +67,10 @@ module.exports = {
             text: 'vuejs-jp',
             link: 'https://vuejs-jp.org/',
           },
+          {
+            text: 'svelte-jp',
+            link: 'https://github.com/svelte-jp'
+          }
         ],
       },
     ],
