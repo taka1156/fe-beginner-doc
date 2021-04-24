@@ -12,7 +12,7 @@ features:
  - title: 🟦 Reactを利用した開発
    details: react + react-router-domを使った開発
  - title: 🟧 Svelteを利用した開発
-   details: svelteを使った開発(ルーティングを内包してます。)
+   details: svelte + svelte-spa-routerを使った開発
  - title: 💻 github pagesの利用方法
    details: master、docs、actionsそれぞれを利用したデプロイ方法
  - title: 🛠 【発展】 viteの使用
