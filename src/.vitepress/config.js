@@ -27,13 +27,18 @@ module.exports = {
     docsBranch: 'master',
 
     nav: [
-      { text: 'Top', link: '/0_docs/' },
-      { text: 'Vue', link: '/1_vue/' },
-      { text: 'React', link: '/2_react/' },
-      { text: 'Svelte', link: '/3_svelte/' },
-      { text: 'other site', link: '/4_other/' },
-      { text: 'Github Pages', link: '/5_githubpages/' },
-      { text: '発展', link: '/6_ex/' },
+      {
+        text: 'NAVI',
+        items: [
+          { text: 'Top', link: '/0_docs/' },
+          { text: 'Vue', link: '/1_vue/' },
+          { text: 'React', link: '/2_react/' },
+          { text: 'Svelte', link: '/3_svelte/' },
+          { text: 'other site', link: '/4_other/' },
+          { text: 'Github Pages', link: '/5_githubpages/' },
+          { text: '発展', link: '/6_ex/' },
+        ],
+      },
       {
         text: '公式リンク',
         items: [
@@ -47,7 +52,7 @@ module.exports = {
           },
           {
             text: 'svelte',
-            link: 'https://sveltejp.dev/'
+            link: 'https://sveltejp.dev/',
           },
           {
             text: 'Vite',
@@ -69,8 +74,8 @@ module.exports = {
           },
           {
             text: 'svelte-jp',
-            link: 'https://github.com/svelte-jp'
-          }
+            link: 'https://github.com/svelte-jp',
+          },
         ],
       },
     ],

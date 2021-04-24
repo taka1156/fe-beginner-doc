@@ -5,9 +5,15 @@
   "scripts": {
     "docs:dev": "vitepress dev src",
     "docs:build": "vitepress build src && mv src/.vitepress/dist dist",
-    "docs:serve": "vitepress build src"
+    "docs:serve": "vitepress build src",
+    "docs:lint": "yarn textlint \"src/**\""
   },
   "devDependencies": {
+    "textlint": "^11.9.0",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-preset-ja-spacing": "^2.0.2",
+    "textlint-rule-preset-ja-technical-writing": "^4.0.1",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0",
     "vitepress": "^0.12.2"
   }
 }
