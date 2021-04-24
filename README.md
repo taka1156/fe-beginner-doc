@@ -2,10 +2,12 @@
 
 フロントエンド初心者向けのドキュメント
 
-主に、vue、reactのサイトデプロイから少し挑戦的な内容までをカバーする予定です
+主に、vue、reactのサイトデプロイから少し挑戦的な内容までをカバーする予定です。
 
 更新に参加してくれた方は、coming soon...を自分の情報に置き換えてください。
 
+絵文字も使えるみたいです。
+[GitHub, Slack, Qiitaなどで使える！覚えておきたい絵文字コード集](https://qiita.com/ruwatana/items/6b5be96728b85ee53c1e)
 
 ```javascript
 const WRITERS = [
