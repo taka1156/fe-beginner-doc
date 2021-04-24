@@ -3,8 +3,18 @@ module.exports = {
   description:
     'このサイトはフロントエンド🔰初心者向けのの情報をまとめるサイトです。',
   head: [
-    ['meta', { property: 'og:image', content: '/fe-beginner-doc/site/logo.png' }],
-    ['link', { rel: 'icon', type: 'image/png', href: '/fe-beginner-doc/site/logo.png' }],
+    [
+      'meta',
+      { property: 'og:image', content: '/fe-beginner-doc/site/logo.png' },
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/fe-beginner-doc/site/logo.png',
+      },
+    ],
   ],
   base: '/fe-beginner-doc/',
   themeConfig: {
@@ -17,6 +27,13 @@ module.exports = {
     docsBranch: 'master',
 
     nav: [
+      { text: 'Top', link: '/0_docs/' },
+      { text: 'Vue', link: '/1_vue/' },
+      { text: 'React', link: '/2_react/' },
+      { text: 'Svelte', link: '/3_svelte/' },
+      { text: 'other site', link: '/4_other/' },
+      { text: 'Github Pages', link: '/5_githubpages/' },
+      { text: '発展', link: '/6_ex/' },
       {
         text: '公式リンク',
         items: [
@@ -39,18 +56,49 @@ module.exports = {
           },
         ],
       },
+      {
+        text: 'コミュニティ',
+        items: [
+          {
+            text: 'vuejs-jp',
+            link: 'https://vuejs-jp.org/',
+          },
+        ],
+      },
     ],
 
-    sidebar: [
-      { text: '0. はじめに', link: '/docs/index' },
-      { text: '1. Vueでのサイト作成', link: '/docs/1_vue' },
-      { text: '2. Reactでのサイト作成', link: '/docs/2_react' },
-      { text: '3. その他サイト', link: '/docs/3_other' },
-      { text: '4. github pagesデプロイ', link: '/docs/4_githubpages' },
-      { text: '5. 発展: viteを使った環境構築', link: '/docs/5_ex_vite' },
-      { text: '6. 発展: spaページで404が出る', link: '/docs/6_ex_spa' },
-      { text: '7. 発展: linterを入れよう', link: '/docs/7_ex_linter' },
-      { text: '8. 編集者、管理者一覧', link: '/docs/writers' },
-    ],
+    sidebar: {
+      '/1_vue/': 'auto',
+      '/2_react/': 'auto',
+      '/3_svelte/': 'auto',
+      '/4_other/': 'auto',
+      '/5_githubpages/': 'auto',
+      '/6_ex/': 'auto',
+      '/': [
+        { text: '0. はじめに', link: '/0_docs/' },
+        {
+          text: '1. Vueでのサイト作成',
+          link: '/1_vue/',
+        },
+        {
+          text: '2. Reactでのサイト作成',
+          link: '/2_react/',
+        },
+        {
+          text: '3. svelteでのサイト作成',
+          link: '/3_svelte/',
+        },
+        { text: '4. その他サイト', link: '/4_other/' },
+        {
+          text: '5. github pagesデプロイ',
+          link: '/5_githubpages/',
+        },
+        {
+          text: '6. 発展',
+          link: '/6_ex/',
+        },
+        { text: '編集者、管理者一覧', link: '/0_docs/writers' },
+      ],
+    },
   },
 };
