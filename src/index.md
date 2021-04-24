@@ -5,7 +5,7 @@ heroImage: /site/logo.png
 heroText: Welcome to Frontend World
 tagline: このサイトはフロントエンド初心者向けのtipsや手引きのようなものをまとめています。
 actionText: Get Start
-actionLink: /docs/
+actionLink: /0_docs/
 features:
  - title: vueを利用した開発
    details: vue2 + vue-router使った開発
