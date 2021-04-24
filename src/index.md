@@ -19,5 +19,5 @@ features:
    details: vite + vue3 or reactの開発
  - title: 📍 その他tips
    details: spaで404が出る,OGP対策など
-footer: MIT Licensed | Copyright ©︎  20219
+footer: MIT Licensed | Copyright ©︎  2021
 ---
