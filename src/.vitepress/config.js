@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Welcome to Frontend World',
   description:
-    'このサイトはフロントエンド🔰初心者向けのの情報をまとめるサイトです。',
+    'このサイトはフロントエンド🔰初心者向けの情報をまとめるサイトです。',
   head: [
     [
       'meta',
@@ -85,15 +85,15 @@ module.exports = {
       '/': [
         { text: '0. はじめに', link: '/0_docs/' },
         {
-          text: '1. Vueでのサイト作成',
+          text: '1. Vueを利用したサイト作成',
           link: '/1_vue/',
         },
         {
-          text: '2. Reactでのサイト作成',
+          text: '2. Reactを利用したサイト作成',
           link: '/2_react/',
         },
         {
-          text: '3. svelteでのサイト作成',
+          text: '3. Svelteを利用したサイト作成',
           link: '/3_svelte/',
         },
         { text: '4. その他サイト', link: '/4_other/' },
