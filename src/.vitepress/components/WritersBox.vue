@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  import { WRITERS } from '../../contants/index.js';
+  import { WRITERS } from '../../constants/index.js';
 
   export default {
     name: 'WritersBox',
