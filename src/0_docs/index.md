@@ -58,20 +58,20 @@
 - **vue を選択**
   
   `vue-cli`を導入して、対話形式で vue-router を導入してみましょう。<br>
-  順番: [1](../1_vue/) --> [5](../5_githubpages/) --> ex
+  順番: [1](../1_vue/) --> [5](../5_githubpages/) --> [発展](../6_ex/)
 
 
 
 - **react を選択** 
   
    `create-react-app`を使い react を導入し、react-router-dom を入れましょう。<br>
-   順番: [2](../2_react/) --> [5](../5_githubpages/) --> ex
+   順番: [2](../2_react/) --> [5](../5_githubpages/) --> [発展](../6_ex/)
 
 
 - **svelte を選択**
   
   svelteKit を使い導入<br>
-  順番: [3](../3_svelte/) --> [5](../5_githubpages/)
+  順番: [3](../3_svelte/) --> [5](../5_githubpages/) --> [発展](../6_ex/)
 
 
 - **その他(普通のサイト)**

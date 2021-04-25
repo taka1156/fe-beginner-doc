@@ -51,7 +51,7 @@ module.exports = {
             link: 'https://ja.reactjs.org/',
           },
           {
-            text: 'svelte',
+            text: 'Svelte',
             link: 'https://sveltejp.dev/',
           },
           {
