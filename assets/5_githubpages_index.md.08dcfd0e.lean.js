@@ -1,0 +1,1 @@
+import{o as a,c as t,a as e}from"./app.2c8e9a19.js";const r='{"title":"5. GitHub pagesデプロイ","description":"","frontmatter":{},"relativePath":"5_githubpages/index.md","lastUpdated":1619344678733}',s={},h=e('',8);s.render=function(e,r,s,g,p,o){return a(),t("div",null,[h])};export default s;export{r as __pageData};
