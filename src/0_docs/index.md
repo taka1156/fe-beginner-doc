@@ -70,7 +70,7 @@
 
 - **svelte を選択**
   
-  svelteKit を使い導入<br>
+  `degit` svelte を使い導入し、svelte-spa-router を入れましょう<br>
   順番: [3](../3_svelte/) --> [5](../5_githubpages/) --> [発展](../6_ex/)
 
 
