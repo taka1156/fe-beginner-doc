@@ -1,1 +1,1 @@
-# 5 - 1. GitHub pagesデプロイ
+# 5. GitHub pagesデプロイ
