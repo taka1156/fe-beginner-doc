@@ -2,9 +2,11 @@
 
 ## 1 - 1. vueの環境構築
 1. VScode に Vue の拡張機能を入れます。
+  
      - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
 1. vue-cli を導入します。
+
     ```shell
     npm install -g @vue/cli
     # OR
@@ -12,6 +14,7 @@
     ```
 
 1. バージョン確認
+
     ```shell
       vue -V
     ```
@@ -23,6 +26,7 @@
 ## 1 - 2.  プロジェクト作成
 
 1. ターミナルで以下のコマンドを実行し、対話形式でプロジェクトを作成します。
+
     ```shell
       cd プロジェクトを格納するフォルダ(c:Desktop/project_vueなど)
       vue create プロジェクト名
@@ -39,20 +43,25 @@
 
     モジュールのインストールが始まりターミナルにずらーっと文字が流れていきます。
 
-1. こちらの画面が出たらプロジェクト作成完了です。<br>
-  (npm でインストールした場合 yarn -> npm になっていますが問題ありません。)
-  ![vue_complete_install](/article/1_vue/create_project/complete_install.png)
+1. こちらの画面が出たらプロジェクト作成完了です。
+   
+    (npm でインストールした場合 yarn -> npm になっていますが問題ありません。)
+    ![vue_complete_install](/article/1_vue/create_project/complete_install.png)
 
-1. 生成されたフォルダに移動して、実際にプロジェクトを覗いてみましょう。<br>
-  (npm でインストールした場合 yarn.lock -> package-lock.json になっていますが問題ありません。)
-     <img src="/article/1_vue/create_project/project_folder.png" alt="vue_project_folder" style="width: 65%; height: 50%;">
+1. 生成されたフォルダに移動して、実際にプロジェクトを覗いてみましょう。
+
+   (npm でインストールした場合 yarn.lock -> package-lock.json になっていますが問題ありません。)
+
+    <img src="/article/1_vue/create_project/project_folder.png" alt="vue_project_folder" style="width: 50%; height: 50%;">
 
 1. `package.json`を開いてみましょう。
+   
    <img src="/article/1_vue/create_project/package_json.png" alt="vue_package_json" style="width: 65%; height: 50%;">
    
    赤枠より上が、このプロジェクトの情報、赤枠の中が開発時に使うスクリプト、 赤枠より下はインストールしたモジュールになっています。
 
 1. ターミナルで下記のスクリプトを実行してみましょう。
+   
     ```shell
       npm run serve
       # OR
@@ -70,6 +79,7 @@
    ターミナル上で `ctrl + c` を行いローカルサーバを閉じます。
 
 1. ターミナルで下記のスクリプトを実行してみましょう。
+   
     ```shell
       npm run build
       # OR
@@ -79,10 +89,21 @@
     ![vue_yarn_build](/article/1_vue/create_project/yarn_build.png)
     これが出てきて、`dist` というフォルダが生成されていたら成功です。
 
-::: tip
-  基本的に開発中は `npm run serve(yarn serve)` で、画面を見つつコーディングを行います。<br>
-  本番(デプロイ)では、`npm run build(yarn build)` で生成される `dist` をサーバに配置するという流れになります。
-:::
+    ::: tip
+      基本的に開発中は `npm run serve(yarn serve)` で、画面を見つつコーディングを行います。<br>
+      本番(デプロイ)では、`npm run build(yarn build)` で生成される `dist` をサーバに配置するという流れになります。
+    :::
 
 
 ##  1 - 3. ポートフォリオ作成
+
+::: warning
+  :warning:	まだ作り途中です。:construction:
+:::
+
+
+---
+
+**順番: [1 *](#)  --> [5](../5_githubpages/) --> [発展](../6_ex/)**
+
+---
