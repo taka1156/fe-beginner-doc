@@ -1,0 +1,1 @@
+import{o as a,c as e,a as t}from"./app.ed6e76e6.js";const r='{"title":"4. その他サイト","description":"","frontmatter":{},"relativePath":"4_other/index.md","lastUpdated":1619430554095}',i={},s=t('',5);i.render=function(t,r,i,_,d,o){return a(),e("div",null,[s])};export default i;export{r as __pageData};
