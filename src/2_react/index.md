@@ -33,7 +33,7 @@
 1. こちらの画面が出たらプロジェクト作成完了です。
    
     (npm でインストールした場合 yarn -> npm になっていますが問題ありません。)
-    ![react_complete_install](/article/2_react/create_project/complete_install.png)
+    <!--あとで追加![react_complete_install](/article/2_react/create_project/complete_install.png)-->
 
 1. 生成されたフォルダに移動して、実際にプロジェクトを覗いてみましょう。
 
