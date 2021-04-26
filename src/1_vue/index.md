@@ -73,8 +73,10 @@
 
    
    <img src="/article/1_vue/create_project/lunch_site.png" alt="vue_lunch_site" style="width: 50%; height: 50%;">
-
-   この画面が出たら成功です。
+  
+    ::: tip 🎉 success
+    この画面が出たら成功です。
+    :::
 
    ターミナル上で `ctrl + c` を行いローカルサーバを閉じます。
 
@@ -90,8 +92,9 @@
     これが出てきて、`dist` というフォルダが生成されていたら成功です。
 
     ::: tip
-      基本的に開発中は `npm run serve(yarn serve)` で、画面を見つつコーディングを行います。<br>
-      本番(デプロイ)では、`npm run build(yarn build)` で生成される `dist` をサーバに配置するという流れになります。
+    基本的に開発中は `npm run serve(yarn serve)` で、画面を見つつコーディングを行います。
+    
+    本番(デプロイ)では、`npm run build(yarn build)` で生成される `dist` をサーバに配置するという流れになります。
     :::
 
 

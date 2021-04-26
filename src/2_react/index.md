@@ -1,6 +1,6 @@
 # 2. Reactを利用したサイト作成
 
-## 1 - 1. reactの環境構築
+## 2 - 1. reactの環境構築
 1. create-react-app を導入します。
 
     ```shell
@@ -19,7 +19,7 @@
     バージョンが返ってきたら成功です。
     :::
 
-## 1 - 2. プロジェクト作成
+## 2 - 2. プロジェクト作成
 
 1. ターミナルで以下のコマンドを実行し、対話形式でプロジェクトを作成します。
 
@@ -50,9 +50,9 @@
 1. ターミナルで下記のスクリプトを実行してみましょう。
    
     ```shell
-      npm run serve
+      npm run start
       # OR
-      yarn serve
+      yarn start
     ```
    
    ![react_yarn_dev](/article/2_react/create_project/yarn_dev.png)
@@ -61,7 +61,9 @@
    
    <img src="/article/2_react/create_project/lunch_site.png" alt="react_lunch_site" style="width: 50%; height: 50%;">
 
-   この画面が出たら成功です。
+    ::: tip 🎉 success
+    この画面が出たら成功です。
+    :::
 
    ターミナル上で `ctrl + c` を行いローカルサーバを閉じます。
 
@@ -77,11 +79,12 @@
     これが出てきて、`build` というフォルダが生成されていたら成功です。
 
     ::: tip
-      基本的に開発中は `npm run start(yarn start)` で、画面を見つつコーディングを行います。<br>
-      本番(デプロイ)では、`npm run build(yarn build)` で生成される `build` をサーバに配置するという流れになります。
+    基本的に開発中は `npm run start(yarn start)` で、画面を見つつコーディングを行います。
+    
+    本番(デプロイ)では、`npm run build(yarn build)` で生成される `build` をサーバに配置するという流れになります。
     :::
 
-## 1 - 3. react-router-domの導入
+## 2 - 3. react-router-domの導入
 
 1. `react-router-dom` をインストールします。
     ```shell
@@ -91,7 +94,7 @@
     ```
 
 
-## 1 - 4. ポートフォリオ作成
+## 2 - 4. ポートフォリオ作成
 
 ::: warning
   :warning:	まだ作り途中です。:construction:

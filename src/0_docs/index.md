@@ -57,7 +57,7 @@
 ## 使うフレームワークを選択
 - **vue を選択**
   
-  `vue-cli`を導入して、対話形式で vue-router を導入してみましょう。<br>
+  `vue-cli`を導入して、対話形式で vue-router を入れましょう。<br>
   順番: [1](../1_vue/) --> [5](../5_githubpages/) --> [発展](../6_ex/)
 
 
@@ -70,7 +70,7 @@
 
 - **svelte を選択**
   
-  `degit`を使い svelte を導入し、svelte-spa-router を入れましょう<br>
+  `tiged`を使い svelte を導入し、svelte-spa-router を入れましょう<br>
   順番: [3](../3_svelte/) --> [5](../5_githubpages/) --> [発展](../6_ex/)
 
 
