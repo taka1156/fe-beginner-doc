@@ -1,0 +1,1 @@
+import{o as e,c as a,a as r}from"./app.11ad80b9.js";const t='{"title":"リポジトリ一覧","description":"","frontmatter":{},"relativePath":"0_docs/repos.md","lastUpdated":1619706602835}',p={},l=r('',2);p.render=function(r,t,p,o,s,n){return e(),a("div",null,[l])};export default p;export{t as __pageData};
