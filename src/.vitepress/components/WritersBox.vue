@@ -45,7 +45,7 @@
   .profile-box {
     display: flex;
     justify-content: center;
-    width: 85%;
+    width: 90%;
     height: 150px;
     padding: 0;
     margin: 0 auto;
@@ -56,26 +56,24 @@
 
   .profile-box__img {
     display: block;
-    width: 50%;
+    width: 30%;
     height: 80%;
     padding: 0;
-    margin: 10px;
-    padding-right: 10px;
-    border-right: 1px solid gray;
+    margin: auto;
   }
 
   .sns-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    margin: 20px auto;
+    width: 65%;
+    padding: 10px auto;
+    border-left: 1px solid gray;
   }
 
   .sns-icons__icon {
-    display: flex;
-    height: 50%;
-    width: 50%;
+    height: 50px;
+    width: 50px;
   }
 
   @media screen and (min-width: 768px) {
