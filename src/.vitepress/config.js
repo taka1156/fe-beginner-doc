@@ -110,6 +110,7 @@ module.exports = {
           text: '6. 発展',
           link: '/6_ex/',
         },
+        { text: 'リポジトリ一覧', link: '/0_docs/repos' },
         { text: '編集者、管理者一覧', link: '/0_docs/writers' },
       ],
     },
