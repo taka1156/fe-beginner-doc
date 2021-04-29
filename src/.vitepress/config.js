@@ -1,4 +1,5 @@
 module.exports = {
+  lang: "ja",
   title: 'Welcome to Frontend World',
   description:
     'このサイトはフロントエンド🔰初心者向けの情報をまとめるサイトです。',
