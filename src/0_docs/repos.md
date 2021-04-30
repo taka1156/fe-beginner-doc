@@ -1,13 +1,20 @@
 # リポジトリ一覧
 
 - vue
-
-  [taka1156/febd-vue-sample](https://github.com/taka1156/febd-vue-sample)
+  - リポジトリ<br>
+    [taka1156/febd-vue-sample](https://github.com/taka1156/febd-vue-sample)
+  - サイト<br>
+    [https://taka1156.github.io/febd-vue-sample/](https://taka1156.github.io/febd-vue-sample/)
 
 - react
-  
-  [taka1156/febd-react-sample](https://github.com/taka1156/febd-react-sample)
+  - リポジトリ<br>
+    [taka1156/febd-react-sample](https://github.com/taka1156/febd-react-sample)
+  - サイト<br>
+    [https://taka1156.github.io/febd-react-sample/](https://taka1156.github.io/febd-react-sample/)
+
 
 - svelte
-  
-  [taka1156/febd-svelte-sample](https://github.com/taka1156/febd-svelte-sample)
+  - リポジトリ<br>
+    [taka1156/febd-svelte-sample](https://github.com/taka1156/febd-svelte-sample)
+  - サイト<br>
+    [https://taka1156.github.io/febd-svelte-sample/](https://taka1156.github.io/febd-svelte-sample/)
