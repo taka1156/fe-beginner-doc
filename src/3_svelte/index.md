@@ -314,6 +314,14 @@
 1. `public/static` に画像を追加してください。<br>
    こちらから取得できます。[Svelteロゴ - svg porn](https://svgporn.com/#search=svelte)
 
+1. 下記を実行
+      
+    ```shell
+      npm run dev
+      # OR
+      yarn dev
+    ```
+
 ## 3 - 5. ポートフォリオ作成
 
 ::: warning
