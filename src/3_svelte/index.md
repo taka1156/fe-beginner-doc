@@ -42,7 +42,7 @@
 
 ## 3 - 2. プロジェクト作成
 
-1. ターミナルで以下のコマンドを実行し、対話形式でプロジェクトを作成します。
+1. ターミナルで以下のコマンドを実行し、プロジェクトを作成します。
 
     ```shell
       cd プロジェクトを格納するフォルダ(c:Desktop/project_svelteなど)
@@ -115,7 +115,43 @@
     本番(デプロイ)では、`npm run build(yarn build)` で `public` 中に、`build` が生成されるので `public` ごとサーバに配置するという流れになります。
     :::
 
-## 3 - 3. svelte-spa-routerの導入
+## 3 - 3 svelte基本構文
+今回のプロジェクトで使う公文を簡単に説明します。
+
+- リストレンダリング<br>
+  配列、オブジェクトなどを展開しながら要素をひとつずつ表示
+
+  ```html
+    <script>
+      // 1 ~ 10の配列
+      let nums = [...new Array(10)].map((v, i) => i + 1);
+    </script>
+  
+    {#each nums as num}
+      <div key={num} class="nav__item">
+      {num}
+      </div>
+    {/each}
+  ```
+
+- 条件付きレンダリング<br>
+  値によって、表示する内容を変える
+
+  ```html
+  <script>
+    let x = 10;
+  </script>
+  
+  {#if x > 10}
+    <p>{x}は、10より大きい</p>
+  {:else if x < 5}
+    <p>{x}は、5より少ない</p>
+  {:else}
+    <p>{x}は、5と10の間</p>
+  {/if}
+  ```
+
+## 3 - 4. svelte-spa-routerの導入
 
 1. `svelte-spa-router` をインストールします。
     ```shell
@@ -124,8 +160,161 @@
     yarn add svelte-spa-router
     ```
 
+1. `src/constants/index.js` を作成し以下を記載してください。<br>
+   (ナビゲーションバーで使用するルーティング定義です。)
 
-## 3 - 4. ポートフォリオ作成
+    ```javascript
+    const routesNav = [
+      {
+        name: 'Top',
+        path: '/',
+      },
+      {
+        name: 'About',
+        path: '/about',
+      },
+    ];
+
+    export { routesNav }
+    ```
+
+1. `src/components/Navigation/Navigation.svelte` を作成し、以下のようにします。
+   ```html
+    <script>
+      import { link } from 'svelte-spa-router';
+      import { routesNav } from '../../constants/index.js';
+    </script>
+
+    <div>
+      <nav>
+        <ul class="nav">
+          {#each routesNav as route}
+            <li key={route.name} class="nav__item">
+              <a class="nav__item--link" href={route.path} use:link>
+                {route.name}
+              </a>
+            </li>
+          {/each}
+        </ul>
+      </nav>
+    </div>
+
+    <style>
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 5vh;
+      }
+
+      .nav__item {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        background-color: cornflowerblue;
+        border: 1px solid white;
+      }
+
+      .nav__item--link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 5vh;
+        color: white;
+      }
+    </style>
+   ```
+
+1. `src/view` フォルダを作成し、配下に `About/About.svelte`、`Top/Top.svelte` を作ります。
+   
+    **Top.svelte**
+    ```html
+      <script>
+        let name = 'world';
+      </script>
+
+      <div>
+        <h1>Svelte App</h1>
+        <img src="./static/svelte.svg" alt="svelte logo">
+        <p class="welcome">Hello {name}!</p>
+        <p>
+          Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
+          how to build Svelte apps.
+        </p>
+      </div>
+
+      <style>
+        .welcome {
+          color: #ff3e00;
+          text-transform: uppercase;
+          font-size: 4em;
+          font-weight: 100;
+        }
+      </style>
+    ```
+
+    **About.svelte**
+    ```html
+      <h1>About</h1>
+    ```
+
+1. `src/routes/index.js`を作成し、ルーティング定義を記載します。
+   ```javascript
+    import Top from '../view/Top.svelte';
+    import About from '../view/About.svelte';
+
+    const routes = {
+      '/': Top,
+      '/about': About,
+    };
+
+    export { routes };
+   ```
+
+1. `src/App.svelte`を以下のように差し替えます。
+   ```html
+    <script>
+    import Router from 'svelte-spa-router';
+    import Navigation from './components/Navigation/Navigation.svelte'
+    import { routes } from './routes/index.js'
+    </script>
+
+    <main>
+      <Navigation />
+      <Router {routes} />
+    </main>
+
+    <style>
+      main {
+        text-align: center;
+        padding: 1em;
+        max-width: 240px;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 640px) {
+        main {
+          max-width: none;
+        }
+      }
+    </style>
+   ```
+
+1. `public/static` に画像を追加してください。<br>
+   こちらから取得できます。[Svelteロゴ - svg porn](https://svgporn.com/#search=svelte)
+
+## 3 - 5. ポートフォリオ作成
 
 ::: warning
   :warning:	まだ作り途中です。:construction:
