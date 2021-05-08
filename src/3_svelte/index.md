@@ -222,7 +222,7 @@
         padding: 0;
         margin: 0 auto;
         text-align: center;
-        background-color: cornflowerblue;
+        background-color: orangered;
         border: 1px solid white;
       }
 
@@ -246,7 +246,7 @@
 
       <div>
         <h1>Svelte App</h1>
-        <img src="./static/svelte.svg" alt="svelte logo">
+        <img src="./static/svelte.svg" alt="svelte logo" class="logo">
         <p class="welcome">Hello {name}!</p>
         <p>
           Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
@@ -259,7 +259,13 @@
           color: #ff3e00;
           text-transform: uppercase;
           font-size: 4em;
-          font-weight: 100;
+          font-weight: 10;
+          margin: 10px;
+        }
+
+        .logo {
+          height: 50%;
+          width: 50%;
         }
       </style>
     ```
@@ -285,13 +291,13 @@
 1. `src/App.svelte`を以下のように差し替えます。
    ```html
     <script>
-    import Router from 'svelte-spa-router';
-    import Navigation from './components/Navigation/Navigation.svelte'
-    import { routes } from './routes/index.js'
+      import Router from 'svelte-spa-router';
+      import Navigation from './components/Navigation/Navigation.svelte';
+      import { routes } from './routes/index.js';
     </script>
 
+    <Navigation />
     <main>
-      <Navigation />
       <Router {routes} />
     </main>
 
@@ -299,14 +305,8 @@
       main {
         text-align: center;
         padding: 1em;
-        max-width: 240px;
+        width: 80%;
         margin: 0 auto;
-      }
-
-      @media (min-width: 640px) {
-        main {
-          max-width: none;
-        }
       }
     </style>
    ```
@@ -321,6 +321,12 @@
       # OR
       yarn dev
     ```
+    ![svelte_top_screen](/article/3_svelte/add_router/top_screen.png)
+    ![svelte_about_screen](/article/3_svelte/add_router/about_screen.png)
+
+    ::: tip 🎉 success
+    このように遷移できたら完了。
+    :::
 
 ## 3 - 5. ポートフォリオ作成
 
