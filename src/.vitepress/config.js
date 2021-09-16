@@ -23,7 +23,7 @@ module.exports = {
     logo: '/site/logo.png',
     editLinks: true,
     editLinkText: 'このページをgithubで編集',
-    lastUpdate: '最終更新',
+    lastUpdated: '最終更新',
     docsDir: 'src',
     docsBranch: 'master',
 
