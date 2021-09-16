@@ -1,0 +1,1 @@
+import{o as e,c as a,a as t}from"./app.edf602c8.js";const r='{"title":"リポジトリ一覧","description":"","frontmatter":{},"relativePath":"0_docs/repos.md","lastUpdated":1631808128565}',l={},i=t('',2);l.render=function(t,r,l,p,o,s){return e(),a("div",null,[i])};export default l;export{r as __pageData};
